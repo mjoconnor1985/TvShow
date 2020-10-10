@@ -14,7 +14,7 @@ class EpisodeList extends Component {
         for (const eps of episodes) {
             episodeComponents.push(<Episode episode={eps} />);
         }
-        
+
         return (
             <div class="episode-list-container">
                 {episodeComponents}

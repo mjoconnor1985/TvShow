@@ -16,7 +16,7 @@ class EpisodeList extends Component {
         }
 
         return (
-            <section className=".episode-list-container">
+            <section className="episode-list-container">
                 {episodeComponents}
             </section>
         );

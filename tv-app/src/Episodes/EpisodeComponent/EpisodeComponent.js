@@ -11,7 +11,7 @@ class Episode extends Component {
         return (
             <div class="episode">
                 <a title="More Info" href={episode.url} target="_blank"><img class="episode-image" src={episode.image.medium} /></a>
-                <p>Season {episode.season}</p> 
+                <p>Season {episode.season}</p>
                 <p>Episode - {episode.number} {episode.name}</p>
             </div>
         );

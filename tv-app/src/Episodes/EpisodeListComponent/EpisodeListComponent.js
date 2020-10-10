@@ -12,13 +12,13 @@ class EpisodeList extends Component {
         const episodeComponents = [];
 
         for (const eps of episodes) {
-            episodeComponents.push(<Episode episode={eps} />);
+            episodeComponents.push(<Episode key={eps.id} episode={eps} />);
         }
 
         return (
-            <div class="episode-list-container">
+            <section className=".episode-list-container">
                 {episodeComponents}
-            </div>
+            </section>
         );
     }
 }

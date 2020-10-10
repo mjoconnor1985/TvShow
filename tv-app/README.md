@@ -2,6 +2,7 @@
 Somethings I would like to have done if I had more time:
 
 - Create a seperate component for header. 
+- Loading gif.
 - Center Epsides on all screen sizes.
 - Remove background image on smaller screens so that it just has the background color.
 - Accordion drop down for the episode summary.

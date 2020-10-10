@@ -17,21 +17,21 @@ class App extends Component {
   render() {
     let content;
     if (this.state.isLoading) {
-      content = <p class="loading">Loading...</p>
+      content = <p className="loading">Loading...</p>
     } else {
       let summary = this.state.tvShow.summary.replaceAll('<p>', '').replaceAll('</p>', '');
       content =
         <div>
-          <header class="app-header">
+          <header className="app-header">
             <a href={this.state.tvShow.officialSite} target="_blank">
-              <img class="logo" src={this.state.tvShow.image.medium} />
+              <img className="logo" src={this.state.tvShow.image.medium} />
             </a>
           </header>
 
           <div class="background-image" style={{ backgroundImage: `url(${this.state.tvShow.image.original})` }}>
-            <section class="container">
+            <section className="container">
               <article>
-                <p class="summary">{summary}</p>
+                <p className="summary">{summary}</p>
               </article>
               <EpisodeList episodes={this.state.episodes} />
             </section>
@@ -39,7 +39,7 @@ class App extends Component {
         </div>;
     }
     return (
-      <div className="App">
+      <div>
         {content}
       </div>
     );

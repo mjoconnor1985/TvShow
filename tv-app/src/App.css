@@ -1,0 +1,53 @@
+body {
+  background-color: #282c34;
+  color: white;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%
+}
+
+.app-header {
+  height: 100px
+}
+
+.logo{
+  margin: 10px;
+  height: 90px;
+}
+
+.background-image{
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 10px solid #a4bde2;
+}
+
+.container {
+  margin: 60px 100px;
+}
+
+.summary {
+  background-color: #282C55;
+  padding: 10px;
+}
+
+@media  only screen and (max-width: 768px){
+  .container {
+    margin: 10px;
+  }
+}
+
+@media  only screen and (max-width: 600px){
+  .app-header {
+    display: none;
+  }
+  .background-image{
+    border: none;
+  }
+}
+
+
+

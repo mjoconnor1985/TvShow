@@ -28,7 +28,7 @@ class App extends Component {
             </a>
           </header>
 
-          <div class="background-image" style={{ backgroundImage: `url(${this.state.tvShow.image.original})` }}>
+          <div className="background-image" style={{ backgroundImage: `url(${this.state.tvShow.image.original})` }}>
             <section className="container">
               <article>
                 <p className="summary">{summary}</p>

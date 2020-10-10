@@ -30,7 +30,9 @@ class App extends Component {
 
           <div class="background-image" style={{ backgroundImage: `url(${this.state.tvShow.image.original})` }}>
             <section class="container">
+              <article>
               <p class="summary">{summary}</p>
+              </article>
               <EpisodeList episodes={this.state.episodes} />
             </section>
           </div>

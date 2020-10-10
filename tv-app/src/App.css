@@ -31,7 +31,7 @@ body {
 
 .summary {
   background-color: #282C55;
-  padding: 10px;
+  padding: 20px;
 }
 
 @media  only screen and (max-width: 768px){

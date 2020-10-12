@@ -4,7 +4,6 @@
     width: 300px;
     height: 260px;
     padding: 5px 10px 0 22px;
-    float: left;
     background-color: #282C55;
     margin: 10px;
 }
@@ -21,13 +20,6 @@
 
 @media  only screen and (max-width: 768px){
     .episode {
-        margin: 0 10px 10px 30px;
-    }
-  }
-
-  @media  only screen and (max-width: 500px){
-    .episode {
         margin: auto;
-        float: none;
     }
   }

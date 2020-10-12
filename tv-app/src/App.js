@@ -19,23 +19,25 @@ class App extends Component {
     if (this.state.isLoading) {
       content = <p className="loading">Loading...</p>
     } else {
-      let summary = this.state.tvShow.summary.replaceAll('<p>', '').replaceAll('</p>', '');
+      let summary = this.removeHtmlTags(this.state.tvShow.summary);
       content =
         <div>
           <header className="app-header">
             <a href={this.state.tvShow.officialSite} target="_blank">
               <img className="logo" src={this.state.tvShow.image.medium} />
             </a>
+            <p className="show-title">{this.state.tvShow.name}</p>
           </header>
 
-          <div className="background-image" style={{ backgroundImage: `url(${this.state.tvShow.image.original})` }}>
-            <section className="container">
+          <section className="content-body">
+            <img className="main-image" src={this.state.tvShow.image.original} />
+            <div className="container">
               <article>
                 <p className="summary">{summary}</p>
               </article>
               <EpisodeList episodes={this.state.episodes} />
-            </section>
-          </div>
+            </div>
+          </section>
         </div>;
     }
     return (
@@ -63,6 +65,10 @@ class App extends Component {
     const episodeRes = await fetch(`${this.apiHostName}/shows/${id}/episodes`);
     const episodes = await episodeRes.json();
     this.setState({ episodes });
+  }
+
+  removeHtmlTags = (input) => {
+    return input.replaceAll(/<[^>]*>/g, "");
   }
 }
 

@@ -3,8 +3,6 @@ Somethings I would like to have done if I had more time:
 
 - Create a seperate component for header. 
 - Loading gif.
-- Center Epsides on all screen sizes.
-- Remove background image on smaller screens so that it just has the background color.
 - Accordion drop down for the episode summary.
 - Drop down to select 1 season at a time.
 - Click on episode image and it opens a pop up with a clip from the show with an icon at the button that can take you over to a place where you can purchase the epside. 

@@ -10,7 +10,9 @@ body {
 }
 
 .app-header {
-  height: 100px
+  display: flex;
+  height: 100px;
+  background-color:#282C55;
 }
 
 .logo{
@@ -18,21 +20,42 @@ body {
   height: 90px;
 }
 
-.background-image{
-  min-height: 90vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top: 10px solid #a4bde2;
+.show-title {
+  color: white;
+  font-style: italic;
+  font-family: Cambria;
+  font-size: larger;
+  margin: auto;
+  font-size: 50px;
 }
 
 .container {
   margin: 60px 100px;
+  float: right;
+}
+
+
+.content-body{
+  display: flex;
+  border-top: 10px solid #a4bde2;
 }
 
 .summary {
   background-color: #282C55;
   padding: 20px;
 }
+
+@media  only screen and (max-width: 1600px){
+  .content-body{
+    display: block;
+  }
+
+  .main-image{
+    height: 800px;
+    width: 100%;
+  }
+}
+
 
 @media  only screen and (max-width: 768px){
   .container {
@@ -46,6 +69,12 @@ body {
   }
   .background-image{
     border: none;
+  }
+}
+
+@media  only screen and (max-width: 300px){
+  .content-body{
+      width: 100%;
   }
 }
 
